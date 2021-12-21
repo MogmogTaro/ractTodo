@@ -43,13 +43,21 @@ export const App = () => {
     setCompleteTodos(newCompleteTodos);
     setIncompleteTodos(newIncompleteTodos);
   };
+  let maxTodos = incompleteTodos.length >= 5;
   return (
     <>
       <InputTodo
         todoText={todoText}
         onChange={onChangeTodoText}
         onClick={onClickAdd}
+        disabled={maxTodos}
       />
+      {maxTodos && (
+        <p style={{ color: "red" }}>
+          登録できるtodoは5個までだよ〜。消化しろ〜。
+        </p>
+      )}
+
       <InputCompleteTodo
         todos={incompleteTodos}
         onClickComplete={onClickComplete}
