@@ -1,5 +1,9 @@
-import React, { useState } from "react";
+import { InlineStyle } from "./InlineStyle";
 
 export const App = () => {
-  return <></>;
+  return (
+    <div>
+      <InlineStyle />
+    </div>
+  );
 };
