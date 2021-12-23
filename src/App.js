@@ -8,7 +8,7 @@ import { HeaderOnly } from "./components/templates/HeaderOnly";
 import { BrowserRouter } from "react-router-dom";
 
 const user = {
-  image: "https://source.unsplash.com/Sg3XwuEpybU",
+  image: "https://source.unsplash.com/1zmdbC-8T6s",
   name: "うちだ",
   email: "1234@example.com",
   phone: "090-1234-5678",
